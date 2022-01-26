@@ -1,0 +1,20 @@
+.theme--dark {
+  background-color: var(--base-color);
+  color: var(--text-color);
+  --base-color: #1f1f1f;
+  --contrast-color: #fff;
+  --text-color: #fff;
+  --interaction-contrast-color: #1f1f1f;
+  --link-color: #2997ff;
+
+  --shade50: #333333;
+  --shade100: #545454;
+  --shade200: #6b6b6b;
+  --shade300: #afafaf;
+  --shade400: #cbcbcb;
+
+  --primary-color: #2997ff;
+  --primary-color400: #2997ff;
+
+  --primary-btn-bg: var(--primary-color);
+}

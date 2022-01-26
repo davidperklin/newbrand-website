@@ -1,0 +1,120 @@
+// base styles
+html {
+  font-size: 16px;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0px;
+  border-style: solid;
+  border-color: var(--border-color);
+}
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background: var(--background-color);
+  font-weight: var(--font-weight-normal);
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+}
+body.scrolling-locked {
+  height: 100%;
+  overflow: hidden;
+}
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+b,
+strong {
+  font-weight: var(--font-weight-bold);
+}
+svg {
+  stroke-width: var(--icon-stroke-width);
+}
+blockquote,
+body,
+button,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+pre,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+[role='heading'] {
+  font-weight: var(--font-weight-semiBold);
+  line-height: 1.28;
+}
+p + p {
+  margin-top: 0.75em;
+}
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p,
+p + p,
+p + ul,
+ul + p,
+p + ul {
+  margin-top: 0.75em;
+}
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6,
+ul + h1,
+ul + h2,
+ul + h3,
+ul + h4,
+ul + h5,
+ul + h6 {
+  margin-top: 1.5em;
+}
+.input-container + .input-container,
+.input-container + .select-container,
+.input-container + .textarea-container,
+.input-container + .fieldset-container,
+.input-container + .radio-group-fieldset,
+.select-container + .select-container,
+.select-container + .input-container,
+.select-container + .textarea-container,
+.select-container + .fieldset-container,
+.textarea-container + .textarea-container,
+.textarea-container + .input-container,
+.textarea-container + .select-container,
+.textarea-container + .fieldset-container,
+.fieldset-container + .input-container,
+.fieldset-container + .select-container,
+.fieldset-container + .textarea-container,
+.fieldset-container + .fieldset-container {
+  margin-top: 12px;
+}

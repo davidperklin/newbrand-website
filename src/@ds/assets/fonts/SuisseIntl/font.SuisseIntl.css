@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  src: url('./SuisseIntl-Regular.otf') format('opentype');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 500;
+  src: url('./SuisseIntl-Medium.otf') format('opentype');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 600;
+  src: url('./SuisseIntl-Bold.otf') format('opentype');
+  font-display: swap;
+}

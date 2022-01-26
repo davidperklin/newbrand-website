@@ -1,0 +1,19 @@
+.tag {
+  display: inline-block;
+  border-radius: var(--pill-radius);
+  padding-right: 8px;
+  padding-left: 8px;
+  line-height: 20px;
+  font-size: 9px;
+  border-width: 1px;
+  font-weight: var(--font-weight-bold);
+  background-color: var(--primary-color50);
+  border-color: var(--primary-color100);
+  color: var(--primary-color);
+}
+
+.tag__default {
+  background-color: var(--primary-color50);
+  border-color: var(--primary-color100);
+  color: var(--primary-color);
+}

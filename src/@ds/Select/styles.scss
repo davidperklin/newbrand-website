@@ -1,0 +1,47 @@
+.select-container {
+  display: block;
+}
+.select-label {
+  font-weight: var(--font-weight-semiBold);
+  font-size: var(--mini-font-size);
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.select {
+  width: 100%;
+  border-width: 1px;
+  border-color: var(--shade400);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: var(--base-font-size);
+  line-height: 20px;
+  border-radius: var(--radius1);
+  box-sizing: border-box;
+  box-shadow: var(--btn-shadow);
+  background-color: var(--base-color);
+  cursor: pointer;
+  position: relative;
+  &:focus {
+    border-color: var(--input-focus-border-color);
+    box-shadow: var(--input-focus-shadow);
+    outline: 1px dotted var(--input-focus-border-color);
+    outline-offset: 1px;
+  }
+
+  // background-image: url(https://nb-marketing-assets.s3.amazonaws.com/icons/chevron-down.svg);
+  // background-repeat: no-repeat;
+  // background-position: calc(100% - 6px);
+  // background-size: 14px;
+}
+.select-wrapper {
+  position: relative;
+}
+.select-icon {
+  position: absolute;
+  height: 14px;
+  right: 8px;
+  top: 7px;
+}
