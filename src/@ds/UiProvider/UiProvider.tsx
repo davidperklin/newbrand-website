@@ -1,3 +1,5 @@
+import React from 'react'
+
 import '../theme/normalize.scss'
 import '../theme/base.scss'
 import '../theme/root.scss'

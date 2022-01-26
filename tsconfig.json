@@ -8,6 +8,21 @@
       "@ds": [
         "src/@ds/"
       ],
+      "@api": [
+        "src/api/"
+      ],
+      "@constants": [
+        "src/constants/"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@context/*": [
+        "src/context/*"
+      ],
     },
     "target": "esnext",
     "module": "esnext",

@@ -1,0 +1,67 @@
+module.exports = {
+  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    colors: {
+      base: 'var(--base-color)',
+      contrast: 'var(--contrast-color)',
+      light: 'var(--text-light)',
+      shade50: 'var(--shade50)',
+      shade100: 'var(--shade100)',
+      shade200: 'var(--shade200)',
+      shade300: 'var(--shade300)',
+      shade400: 'var(--shade400)',
+      shade500: 'var(--shade500)',
+      shade600: 'var(--shade600)',
+      shade700: 'var(--shade700)',
+      primary: 'var(--primary-color)',
+      primary50: 'var(--primary-color50)',
+      primary100: 'var(--primary-color100)',
+      primary200: 'var(--primary-color200)',
+      primary300: 'var(--primary-color300)',
+      primary400: 'var(--primary-color400)',
+      primary500: 'var(--primary-color500)',
+      primary600: 'var(--primary-color600)',
+      primary700: 'var(--primary-color700)',
+      danger: 'var(--danger-color)',
+      danger50: 'var(--danger-color50)',
+      success: 'var(--success-color)',
+      transparent: 'rgba(0,0,0,0)',
+      link: 'var(--link-color)',
+    },
+    fontSize: {
+      baseSize: 'var(--base-font-size)',
+      small: 'var(--small-font-size)',
+      mini: 'var(--mini-font-size)',
+      large: 'var(--large-font-size)',
+    },
+    borderRadius: {
+      1: 'var(--radius1)',
+      2: 'var(--radius2)',
+    },
+    extend: {
+      height: {
+        compact: 'var(--size-compact)',
+        default: 'var(--size-default)',
+      },
+      padding: {
+        mini: 'var(--space-mini)',
+        compact: 'var(--space-compact)',
+        default: 'var(--space-default)',
+        large: 'var(--space-large)',
+        xl: 'var(--space-xl)',
+      },
+      margin: {
+        mini: 'var(--space-mini)',
+        compact: 'var(--space-compact)',
+        default: 'var(--space-default)',
+        large: 'var(--space-large)',
+        xl: 'var(--space-xl)',
+      },
+    },
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+}
