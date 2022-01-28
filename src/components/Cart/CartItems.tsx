@@ -27,10 +27,11 @@ const CartItems = ({ items, subtotal }: ICartItems) => {
           {/* <div className="text-right">Subtotal: {subtotal}</div> */}
           <div className="border border-contrast border-dotted px-4 py-3 mb-6 rounded-1">
             <div className="flex justify-between items-center flex-col md:flex-row">
-              <div className="mb-2 md:mb-0">
+              <div className="mb-2 md:mb-0 text-center md:text-left">
                 Subtotal for {items.length} item
                 {items.length > 1 ? 's' : ''}:{' '}
                 <span className="text-danger">{subtotal}</span>.{' '}
+                <br className="md:hidden" />
                 <span className="font-medium">Shipping is free</span>. Tax
                 calculated at checkout.
               </div>

@@ -1,9 +1,17 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const Brand = () => {
+interface IBrand {
+  closeNav: () => void
+}
+
+const Brand = ({ closeNav }: IBrand) => {
   return (
-    <Link to="/?ref=nav_logo" className={`mobileNav__brandLink`}>
+    <Link
+      to="/?ref=mobileNav_logo"
+      className={`mobileNav__brandLink`}
+      onClick={closeNav}
+    >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248.07 29">
         <g id="Layer_2" data-name="Layer 2">
           <g id="Layer_1-2" data-name="Layer 1">

@@ -40,7 +40,6 @@
   top: 0;
   right: 0;
   z-index: 2;
-  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 .mobileNavButton__line {
   position: absolute;
@@ -60,49 +59,31 @@
   z-index: 1;
 }
 .mobileNavButton__line_top {
-  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96),
-    -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
   transform: none;
   z-index: 4;
   .mn_isOpen & {
-    transition: transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96)
-        0.1008s,
-      -webkit-transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
     transform: rotate(45deg);
   }
 }
 .mobileNavButton__line_top__inner {
   top: 14px;
   transform: translateY(-3px) scaleX(0.88235);
-  transition: transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84)
-      0.1008s,
-    -webkit-transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
+
   .mn_isOpen & {
-    transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96),
-      -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
     transform: none;
   }
 }
 .mobileNavButton__line_bottom {
-  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96),
-    -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
   transform: none;
   .mn_isOpen & {
-    transition: transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96)
-        0.1008s,
-      -webkit-transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
     transform: rotate(-45deg);
   }
 }
 .mobileNavButton__line_bottom__inner {
   bottom: 14px;
   transform: translateY(3px) scaleX(0.88235);
-  transition: transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84)
-      0.1008s,
-    -webkit-transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
+
   .mn_isOpen & {
-    transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96),
-      -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
     transform: none;
   }
 }
@@ -116,12 +97,20 @@
   bottom: 0;
   z-index: 9999;
   visibility: hidden;
-  transition: height 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
   max-height: none;
   height: 0px;
   &.mn_isOpen {
     height: calc(100vh - 48px);
     visibility: visible;
+  }
+}
+.mobileNav__list {
+  margin: 0 16px;
+  opacity: 0;
+
+  .mn_isOpen & {
+    opacity: 1;
+    transition: none;
   }
 }
 .mobileNav__listItem {
@@ -149,6 +138,8 @@
   align-items: center;
   justify-content: center;
   z-index: 2;
+  color: var(--contrast-color);
+  text-decoration: none;
 }
 .mobileNavCart__icon {
 }
@@ -166,4 +157,8 @@
   top: 14px;
   right: 14px;
   background-color: var(--danger-color);
+}
+body[data-scroll-locked='true'] {
+  overflow: hidden !important;
+  height: 100% !important;
 }

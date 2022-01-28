@@ -35,6 +35,7 @@ module.exports = {
         component: require.resolve('./src/App.tsx'),
       },
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     'gatsby-plugin-postcss',
   ],

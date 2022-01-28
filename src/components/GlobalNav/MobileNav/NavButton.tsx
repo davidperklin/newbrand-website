@@ -7,7 +7,11 @@ interface INavButton {
 
 const NavButton = ({ isOpen, onClick }: INavButton) => {
   return (
-    <button className={`mobileNavButton__container`} onClick={onClick}>
+    <button
+      className={`mobileNavButton__container`}
+      onClick={onClick}
+      aria-label="Toggle dropdown menu"
+    >
       <span className={`mobileNavButton__line mobileNavButton__line_top`}>
         <span
           className={`mobileNavButton__line__inner mobileNavButton__line_top__inner`}
