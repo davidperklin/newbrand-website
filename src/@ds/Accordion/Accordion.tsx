@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { Icon } from '..'
 import { AccordionProps } from './Accordion.types'
 import './styles.scss'

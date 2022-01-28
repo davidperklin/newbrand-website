@@ -1,6 +1,6 @@
 import React from 'react'
 
 const HomePage = () => {
-  return <p>Hello, world.</p>
+  return <div className="flex">Hello</div>
 }
 export default HomePage

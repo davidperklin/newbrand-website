@@ -10,4 +10,5 @@ export interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {
   sz?: Size
   loading?: boolean
   pill?: boolean
+  shadow?: boolean
 }

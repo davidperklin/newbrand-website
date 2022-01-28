@@ -65,6 +65,7 @@
   color: var(--shade400);
   pointer-events: none;
   border-color: var(--shade200);
+  box-shadow: none !important;
 }
 .button_danger {
   color: var(--danger-color);
@@ -76,4 +77,7 @@
 }
 .button_pill {
   border-radius: 30px;
+}
+.button_shadow {
+  box-shadow: var(--shadow1) !important;
 }

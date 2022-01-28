@@ -17,20 +17,28 @@
   "dependencies": {
     "classnames": "^2.3.1",
     "gatsby": "^4.5.4",
+    "gatsby-plugin-image": "^2.6.0",
     "gatsby-plugin-layout": "^3.6.0",
     "gatsby-plugin-sass": "^5.6.0",
+    "gatsby-source-shopify": "^6.6.0",
+    "isomorphic-fetch": "^3.0.0",
+    "lodash.isequal": "^4.5.0",
     "react": "^17.0.1",
     "react-bootstrap-icons": "^1.7.2",
     "react-dom": "^17.0.1",
-    "sass": "^1.49.0"
+    "sass": "^1.49.0",
+    "shopify-buy": "^2.14.0",
+    "swiper": "^7.4.1"
   },
   "devDependencies": {
     "@types/classnames": "^2.3.1",
+    "@types/isomorphic-fetch": "^0.0.35",
     "autoprefixer": "^10.4.2",
     "gatsby-plugin-postcss": "^5.6.0",
     "gatsby-plugin-root-import": "^2.0.8",
     "postcss": "^8.4.5",
     "prettier": "2.5.1",
+    "shopify-storefront-api-typings": "^1.2.1",
     "tailwindcss": "^3.0.16"
   }
 }

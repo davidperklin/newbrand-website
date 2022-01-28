@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 export default function HTML(props) {
   return (
-    <html {...props.htmlAttributes}>
+    <html {...props.htmlAttributes} className="nb_shop_root">
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -18,7 +18,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes}>
+      <body {...props.bodyAttributes} className="theme--light">
         {props.preBodyComponents}
         <div
           key={`body`}
