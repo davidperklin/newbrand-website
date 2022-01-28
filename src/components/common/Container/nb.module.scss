@@ -2,7 +2,12 @@
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: max(22px, env(safe-area-inset-left));
-  padding-right: max(22px, env(safe-area-inset-right));
-  padding: 0 22px;
+  padding-left: max(16px, env(safe-area-inset-left));
+  padding-right: max(16px, env(safe-area-inset-right));
+  padding: 0 16px;
+  @media (min-width: 768px) {
+    padding-left: max(22px, env(safe-area-inset-left));
+    padding-right: max(22px, env(safe-area-inset-right));
+    padding: 0 22px;
+  }
 }

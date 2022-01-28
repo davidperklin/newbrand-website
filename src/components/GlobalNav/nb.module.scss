@@ -3,13 +3,18 @@
   height: var(--gn-height);
   width: 100%;
   background-color: var(--base-color);
-  display: flex;
   align-items: center;
   padding: 0 22px;
   position: sticky;
   top: 0;
   z-index: var(--z2);
   justify-content: space-between;
+  display: none;
+  appearance: none;
+  @media (min-width: 768px) {
+    display: flex;
+    appearance: unset;
+  }
 }
 .brandLink {
   display: flex;
