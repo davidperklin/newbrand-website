@@ -1,0 +1,18 @@
+.productGrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productGridItem__image {
+  width: 100%;
+}
+
+.productGridItem__colorSelector {
+  height: 8px;
+  width: 28px;
+  margin-right: 2px;
+  border: 1px solid var(--shade300);
+}
+.productGridItem__flag {
+  height: 10px;
+}

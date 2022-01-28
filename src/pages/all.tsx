@@ -3,8 +3,7 @@ import { Link, graphql } from 'gatsby'
 
 import { Product } from '@api'
 import { PRODUCT_PAGE_BASE_SLUG } from '@constants'
-import { Button } from '@ds'
-import useStoreContext from '@hooks/useStoreContext'
+import ProductGrid from '@components/ProductGrid'
 
 export const query = graphql`
   {
@@ -21,6 +20,11 @@ export const query = graphql`
             amount
           }
         }
+        images {
+          gatsbyImageData
+        }
+        productType
+        totalInventory
       }
     }
   }
@@ -29,17 +33,7 @@ export const query = graphql`
 const AllProductsPage = ({ data }) => {
   return (
     <div>
-      <h1>Products</h1>
-      <ul>
-        {data.allShopifyProduct.nodes.map((node: Product) => (
-          <li key={node.id}>
-            <h3>
-              <Link to={`/products/${node.handle}`}>{node.title}</Link>
-              {' - '}${node.priceRangeV2.minVariantPrice.amount}
-            </h3>
-          </li>
-        ))}
-      </ul>
+      <ProductGrid products={data.allShopifyProduct.nodes} />
     </div>
   )
 }

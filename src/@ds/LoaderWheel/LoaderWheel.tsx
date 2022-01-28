@@ -4,7 +4,7 @@ import { LoaderWheelProps } from './LoaderWheel.types'
 import './styles.scss'
 
 const LoaderWheel: React.FC<LoaderWheelProps> = ({
-  height = 24,
+  height = 20,
   appearance = 'light',
   className,
 }) => {

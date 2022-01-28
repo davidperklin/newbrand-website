@@ -38,6 +38,7 @@
   --z3: 99;
   --z4: 999;
 
+  --site-container-width: 1204px;
   // sizes for buttons, inputs, etc.
   --size-large: 32px;
   --size-default: 28px;
@@ -69,6 +70,10 @@
   --product-color-black: #1f1f1f;
   --product-color-grey: #d1d0d0;
   --product-color-pale-pink: pink;
+
+  //
+
+  --shadow1: 0 5px 10px rgba(0, 0, 0, 0.16);
 
   // added utils
   .uppercase-text {

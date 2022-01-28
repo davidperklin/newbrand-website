@@ -23,6 +23,7 @@
       "@context/*": [
         "src/context/*"
       ],
+      
     },
     "target": "esnext",
     "module": "esnext",

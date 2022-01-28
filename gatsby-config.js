@@ -24,6 +24,7 @@ module.exports = {
         '@constants': path.join(__dirname, 'src/constants'),
         '@hooks': path.join(__dirname, 'src/hooks'),
         '@components': path.join(__dirname, 'src/components'),
+        '@common': path.join(__dirname, 'src/components/common'),
         '@context': path.join(__dirname, 'src/context'),
         src: path.join(__dirname, 'src'),
       },

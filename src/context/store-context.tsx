@@ -1,7 +1,6 @@
 import React, { useState, createContext, useEffect, useMemo } from 'react'
 import fetch from 'isomorphic-fetch'
 import Client from 'shopify-buy'
-import { Cart } from '@api'
 
 const client = Client.buildClient(
   {
@@ -20,6 +19,8 @@ export interface IStoreContext {
   removeLineItem: (lineItemId: string) => Promise<void>
   updateLineItem: (lineItemId: string, quantity: number) => Promise<void>
   cart: any
+  client: any
+  handleCheckout: () => void
 }
 
 export const StoreContext = createContext<any>(null)
@@ -116,6 +117,10 @@ export const StoreProvider = ({ children }) => {
     }
   }
 
+  const handleCheckout = () => {
+    window.location.href = cart.webUrl
+  }
+
   const storeValue = useMemo(
     () => ({
       cart,
@@ -125,8 +130,10 @@ export const StoreProvider = ({ children }) => {
       loadingAddToCart,
       loadingRemoveLineItem,
       loadingUpdateLineItem,
+      client,
+      handleCheckout,
     }),
-    [cart]
+    [cart, loadingAddToCart, loadingUpdateLineItem, loadingRemoveLineItem]
   )
 
   console.log(storeValue)

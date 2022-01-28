@@ -22,11 +22,13 @@
     "gatsby-plugin-sass": "^5.6.0",
     "gatsby-source-shopify": "^6.6.0",
     "isomorphic-fetch": "^3.0.0",
+    "lodash.isequal": "^4.5.0",
     "react": "^17.0.1",
     "react-bootstrap-icons": "^1.7.2",
     "react-dom": "^17.0.1",
     "sass": "^1.49.0",
-    "shopify-buy": "^2.14.0"
+    "shopify-buy": "^2.14.0",
+    "swiper": "^7.4.1"
   },
   "devDependencies": {
     "@types/classnames": "^2.3.1",

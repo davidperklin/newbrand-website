@@ -14,6 +14,7 @@ const Button: React.FC<ButtonProps> = ({
   sz = 'default',
   disabled = false,
   pill = false,
+  shadow = false,
   ...props
 }) => {
   const buttonClassNames = classNames({
@@ -27,6 +28,7 @@ const Button: React.FC<ButtonProps> = ({
     button_disabled: disabled || props.loading,
     button_danger: intent === 'danger' && appearance === 'default',
     button_pill: pill === true,
+    button_shadow: shadow && !disabled,
   })
   const buttonStyles = `${buttonClassNames} ${className ? className : ''}`
 
