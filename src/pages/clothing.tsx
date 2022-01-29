@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import ProductGrid from '@components/ProductGrid'
+import Head from '@components/Head'
 
 export const query = graphql`
   {
@@ -34,12 +35,16 @@ export const query = graphql`
   }
 `
 
-const SneakersPage = ({ data }) => {
+const ClothingPage = ({ data }) => {
   return (
-    <div>
+    <>
+      <Head
+        title="Made in Canada Clothing"
+        description="Shop made in Canada clothing. FREE EXPRESS SHIPPING ACROSS CANADA. Hoodies, joggers, crewnecks."
+      />
       <ProductGrid products={data.allShopifyProduct.nodes} />
-    </div>
+    </>
   )
 }
 
-export default SneakersPage
+export default ClothingPage

@@ -6,6 +6,10 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.shopnewbrand.com`,
+    url: `https://www.shopnewbrand.com`,
+    title: 'New Brand',
+    description: 'Sneakers made in Italy. Clothing made in Canada.',
+    author: 'New Brand Inc.',
   },
   plugins: [
     {
@@ -36,6 +40,18 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `New Brand Store`,
+        short_name: `New Brand`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
+        display: `standalone`,
+        icon: 'static/assets/images/fav.jpg',
+      },
+    },
     `gatsby-plugin-sass`,
     'gatsby-plugin-postcss',
   ],

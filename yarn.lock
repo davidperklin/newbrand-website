@@ -1558,6 +1558,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-helmet@^6.1.5":
+  version "6.1.5"
+  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-6.1.5.tgz#35f89a6b1646ee2bc342a33a9a6c8777933f9083"
+  integrity sha512-/ICuy7OHZxR0YCAZLNg9r7I9aijWUWvxaPR6uTuyxe8tAj5RL4Sw1+R6NhXUtOsarkGYPmaHdBDvuXh2DIN/uA==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*":
   version "17.0.38"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.38.tgz#f24249fefd89357d5fa71f739a686b8d7c7202bd"
@@ -4571,6 +4578,17 @@ gatsby-plugin-layout@^3.6.0:
   integrity sha512-NoYj1ZgxGCjtj9pMMX9HMxHVw9u5+i1Unh7E/QZlgzibPf+Y010ZfidzZiCP6maRCzw1S4GBESAoW2muJyG2xA==
   dependencies:
     "@babel/runtime" "^7.15.4"
+
+gatsby-plugin-manifest@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.6.0.tgz#73c69e980449af9a30d9a55ba919c49b1630c18a"
+  integrity sha512-/ySmcnGYmTv4exBQSvPVBDoMVHY9TEdiYnP/NmRTOwRA7VaW525qyc+Nf6lTmlD6AONX2nrbQ3U9F/JxCTL+uw==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    gatsby-core-utils "^3.6.0"
+    gatsby-plugin-utils "^3.0.0"
+    semver "^7.3.5"
+    sharp "^0.29.3"
 
 gatsby-plugin-page-creator@^4.6.0:
   version "4.6.0"
