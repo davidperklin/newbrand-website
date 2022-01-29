@@ -1,13 +1,17 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
-import { Product } from '@api'
-import { PRODUCT_PAGE_BASE_SLUG } from '@constants'
 import ProductGrid from '@components/ProductGrid'
 
 export const query = graphql`
   {
-    allShopifyProduct(sort: { fields: [title] }) {
+    allShopifyProduct(
+      filter: { productType: { eq: "Footwear" } }
+      sort: {
+        fields: priceRangeV2___maxVariantPrice___amount
+        order: DESC
+      }
+    ) {
       nodes {
         id
         title
@@ -30,7 +34,7 @@ export const query = graphql`
   }
 `
 
-const AllProductsPage = ({ data }) => {
+const SneakersPage = ({ data }) => {
   return (
     <div>
       <ProductGrid products={data.allShopifyProduct.nodes} />
@@ -38,4 +42,4 @@ const AllProductsPage = ({ data }) => {
   )
 }
 
-export default AllProductsPage
+export default SneakersPage

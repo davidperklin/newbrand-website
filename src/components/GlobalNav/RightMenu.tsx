@@ -6,16 +6,10 @@ import useStoreContext from '@hooks/useStoreContext'
 
 const GnRightMenu = () => {
   const { cart } = useStoreContext()
-  console.log('Cart', cart)
   return (
     <ul className={`${styles.menu} ${styles.menu_right}`}>
       <li className={styles.item}>
-        <Link to="/account" className={styles.link}>
-          Account
-        </Link>
-      </li>
-      <li className={styles.item}>
-        <Link to="/account/orders" className={styles.link}>
+        <Link to="/orders" className={styles.link}>
           Orders & Returns
         </Link>
       </li>

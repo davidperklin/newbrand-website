@@ -7,9 +7,13 @@ import { formatPrice } from 'src/utils'
 
 const ProductGridItem = ({ product }: ProductGridItemProps) => {
   return (
-    <div className="w-full sm:w-1/2 border border-dotted border-transparent hover:border-contrast">
+    <div
+      className={`w-full sm:w-1/2 ${
+        product.productType === 'Clothing' ? 'md:w-1/3' : ''
+      }`}
+    >
       <Link
-        className="block h-full text-contrast hover:no-underline"
+        className="block h-full text-contrast hover:no-underline border border-dotted border-transparent hover:border-contrast md:p-5 sm:p-4"
         to={`/${PRODUCT_PAGE_BASE_SLUG}/${product.handle}?ref=product_grid`}
       >
         <GatsbyImage
@@ -17,24 +21,9 @@ const ProductGridItem = ({ product }: ProductGridItemProps) => {
           image={product.images[0].gatsbyImageData}
           alt={product.title}
         />
-        <div className="px-4 mt-2.5">
-          <div className="mb-1">
-            <img
-              src={
-                product.productType === 'Clothing'
-                  ? '/assets/icons/ca-flag.svg'
-                  : '/assets/icons/it-flag.svg'
-              }
-              className="h-2.5 w-auto"
-              alt={`
-                ${
-                  product.productType === 'Clothing' ? 'Canada' : 'Italy'
-                } flag
-              `}
-            />
-          </div>
+        <div className="px-4 sm:px-0 my-2.5 mb-6">
           <div>
-            <div role="heading" aria-level={2} className="font-normal">
+            <div role="heading" aria-level={2} className="uppercase">
               {product.title}
               {product.totalInventory === 0 ? (
                 <span className="ml-1">

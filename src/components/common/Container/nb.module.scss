@@ -11,3 +11,10 @@
     padding: 0 22px;
   }
 }
+.container_toEdgeOnMobile {
+  @media (max-width: 768px) {
+    padding-left: max(0px, env(safe-area-inset-left)) !important;
+    padding-right: max(0px, env(safe-area-inset-right)) !important;
+    padding: 0 0px !important;
+  }
+}

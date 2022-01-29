@@ -12,12 +12,12 @@ const ProductImageGallery = ({ product }: IProductImageGallery) => {
         <ProductImageSwiper product={product} />
       </div>
       <div
-        className={`${styles.gallery} ${
+        className={`${
           isFullScreen ? styles.gallery_fullScreen : ''
         } md:block hidden`}
       >
         <div
-          className={`${styles.gallery__closeNote} : ${styles.gallery_fullScreen__closeNote}`}
+          className={`${styles.gallery__closeNote}`}
           onClick={() => setIsFullScreen(!isFullScreen)}
           aria-hidden={!isFullScreen}
         >

@@ -1,10 +1,10 @@
 .productDisplayGrid__formArea {
   @media (min-width: 768px) {
-    top: 52px;
+    top: 48px;
   }
 }
 .productDisplayGrid__formAreaInner {
   @media (min-width: 768px) {
-    min-height: calc(100vh - 52px);
+    min-height: calc(100vh - 48px);
   }
 }

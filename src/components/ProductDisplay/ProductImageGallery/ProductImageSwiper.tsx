@@ -1,11 +1,6 @@
 import React, { useState } from 'react'
 // Import Swiper React components
-import {
-  Swiper,
-  SwiperProps,
-  SwiperSlide,
-  SwiperSlideProps,
-} from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
 import 'swiper/css'

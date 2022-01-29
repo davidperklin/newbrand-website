@@ -15,7 +15,8 @@ const EmptyCart = () => {
             Your cart is empty.
           </div>
           <div className="mt-2">
-            <Link to="/all?ref=empty_cart">Shop</Link>
+            <Link to="/sneakers?ref=empty_cart">Shop sneakers</Link> or{' '}
+            <Link to="/clothing?ref=empty_cart">shop clothing</Link>.
           </div>
         </div>
       </FullScreenCentered>

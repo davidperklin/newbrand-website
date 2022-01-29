@@ -36,16 +36,15 @@ const ProductForm = ({ product }: IProductForm) => {
     }
   }
 
-  console.log('PV', productVariant)
   return (
     <form
       onSubmit={handleSubmit}
       id="product-form"
       name="product_form"
-      className="flex flex-col"
+      className="flex flex-col mb-8"
     >
       <div className="flex justify-between mb-2 order-1 mt-4 md:mt-0">
-        <div role="heading" aria-level={1}>
+        <div role="heading" aria-level={1} className="uppercase">
           {product.title}
         </div>
         <div>{price}</div>
@@ -71,6 +70,11 @@ const ProductForm = ({ product }: IProductForm) => {
               </Select>
             </div>
           ))}
+        <div className="text-light mt-0.5 italic">
+          {product.productType === 'Clothing'
+            ? 'Fits true to size'
+            : 'If you are a half-size, we recommend sizing up'}
+        </div>
         {hasSelected && available && (
           <span className="flex items-start text-success mt-1.5">
             <span className="flex mr-2">
@@ -126,8 +130,7 @@ const ProductForm = ({ product }: IProductForm) => {
               <span>Shipping:</span>
               <ul className="mt-0.5">
                 <li>
-                  <span>Free, express shipping</span> to customers in
-                  Ontario
+                  <span>Free, express shipping</span> across Canada
                 </li>
                 <li>Ships in 1-2 business days</li>
               </ul>
