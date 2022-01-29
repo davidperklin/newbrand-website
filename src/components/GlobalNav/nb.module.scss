@@ -18,7 +18,7 @@
 }
 .brandLink {
   display: flex;
-  width: 10%;
+  width: 132px;
   justify-content: center;
 }
 .brand {
@@ -27,7 +27,7 @@
   box-sizing: content-box;
   border: 1px dotted rgba(0, 0, 0, 0);
   position: relative;
-
+  height: 10px;
   &:hover {
     border-color: var(--contrast-color);
     text-decoration: none;
