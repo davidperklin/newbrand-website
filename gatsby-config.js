@@ -49,7 +49,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
-        icon: 'src/assets/images/fav.jpg',
+        icon: 'src/assets/images/fav.png',
       },
     },
     `gatsby-plugin-sass`,
