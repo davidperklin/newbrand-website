@@ -13,8 +13,8 @@ export const navItems: INavItem[] = [
     path: '/clothing',
   },
   {
-    label: 'Customer Support',
-    path: '/support',
+    label: 'Orders & Returns',
+    path: '/orders',
   },
   {
     label: 'Your Shopping Cart',

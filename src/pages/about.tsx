@@ -7,11 +7,14 @@ const AboutPage = () => {
     <>
       <Head
         title="About New Brand"
-        description=" 'Shop minimal sneakers made in Italy and made in Canada essentials clothing - hoodies, joggers and crewnecks.',"
+        description="Shop minimal sneakers made in Italy and made in Canada essentials clothing - hoodies, joggers and crewnecks."
       />
 
       <Container>
-        <article style={{ maxWidth: '540px' }} className="pt-12 mx-auto">
+        <article
+          style={{ maxWidth: '540px' }}
+          className="pt-12 pb-12 mx-auto"
+        >
           <div role="heading" aria-level={1} className="uppercase mb-4">
             About New Brand
           </div>

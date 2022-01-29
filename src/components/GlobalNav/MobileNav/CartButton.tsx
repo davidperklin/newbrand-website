@@ -18,7 +18,9 @@ const CartButton = ({ closeNav }: ICartButton) => {
     >
       {cart && cart.lineItems.length > 0 && (
         <>
-          <span className="mobileNavCart__number">1</span>
+          <span className="mobileNavCart__number">
+            {cart.lineItems.length}
+          </span>
           <span className="mobileNavCart__indicator" />
         </>
       )}

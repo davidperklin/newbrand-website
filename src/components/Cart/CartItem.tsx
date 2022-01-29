@@ -41,7 +41,9 @@ const CartItem = ({ item, index }: ICartItem) => {
               to={`/${PRODUCT_PAGE_BASE_SLUG}/${item.variant.product.handle}?ref=cart_item`}
               className="text-contrast hover:no-underline"
             >
-              <div className="">{item.title}</div>
+              <div className="">
+                {item.title} ({item.quantity})
+              </div>
             </Link>
 
             <div className="text-light">{item.variant.title}</div>

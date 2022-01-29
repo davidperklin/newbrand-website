@@ -6,10 +6,10 @@ const Footer = () => {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="pt-3 pb-6">
+    <footer className="pt-3 pb-6 text-mini md:text-base">
       <Container>
         <div className="flex justify-between">
-          <div>&copy; {year} New Brand Inc.</div>
+          <div className="text-contrast">&copy; {year} New Brand Inc.</div>
           <div>
             <ul className="flex items-center">
               <li className="mr-6">
@@ -17,12 +17,12 @@ const Footer = () => {
                   to="/policies"
                   className="text-contrast border-b border-dotted border-transparent hover:border-contrast hover:no-underline"
                 >
-                  Policies
+                  Terms of Use
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/policies"
+                  to="/contact"
                   className="text-contrast border-b border-dotted border-transparent hover:border-contrast hover:no-underline"
                 >
                   Contact

@@ -30,6 +30,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
           images {
             gatsbyImageData
+            originalSrc
           }
           descriptionHtml
           description

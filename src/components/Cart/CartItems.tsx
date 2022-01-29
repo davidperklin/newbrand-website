@@ -14,7 +14,7 @@ const CartItems = ({ items, subtotal }: ICartItems) => {
   const { handleCheckout } = useStoreContext()
   return (
     <Container>
-      <div style={{ maxWidth: '760px' }} className="mx-auto mt-6">
+      <div style={{ maxWidth: '760px' }} className="mx-auto pt-6">
         <div role="heading" aria-level={1} className="mb-2">
           Your Shopping Cart
         </div>

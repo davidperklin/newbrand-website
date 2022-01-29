@@ -54,7 +54,7 @@ function Head({ title, description, ogDescription, ogImage }: Head) {
               },
               {
                 name: `twitter:creator`,
-                content: '@_MRSCompany',
+                content: '@newbrand_tw',
               },
               {
                 name: `twitter:title`,
