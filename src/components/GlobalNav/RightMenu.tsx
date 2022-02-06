@@ -9,13 +9,23 @@ const GnRightMenu = () => {
   return (
     <ul className={`${styles.menu} ${styles.menu_right}`}>
       <li className={styles.item}>
+        <Link to="/sneakers?ref=desktop_nav" className={styles.link}>
+          Sneakers
+        </Link>
+      </li>
+      <li className={`${styles.item} ${styles.item__hasDivider}`}>
+        <Link to="/clothing?ref=desktop_nav" className={styles.link}>
+          Clothing
+        </Link>
+      </li>
+      <li className={`${styles.item} ${styles.item__hasDivider}`}>
         <Link to="/orders" className={styles.link}>
           Orders & Returns
         </Link>
       </li>
-      <li className={styles.item}>
+      <li className={`${styles.item} font-bold`}>
         <Link to="/cart" className={styles.link}>
-          Cart {cart ? `(${cart.lineItems.length})` : ''}
+          Shopping Cart {cart ? `(${cart.lineItems.length})` : ''}
         </Link>
       </li>
     </ul>

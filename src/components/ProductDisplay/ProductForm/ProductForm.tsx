@@ -44,13 +44,13 @@ const ProductForm = ({ product }: IProductForm) => {
       className="flex flex-col mb-8"
     >
       <div className="flex justify-between mb-2 order-1 mt-4 md:mt-0">
-        <div role="heading" aria-level={1} className="uppercase">
+        <div role="heading" aria-level={1} className="uppercase font-bold">
           {product.title}
         </div>
-        <div>{price}</div>
+        <div className="uppercase font-bold">{price}</div>
       </div>
 
-      <fieldset className="mb-2 order-2">
+      <fieldset className="mb-2 order-2 text-copy">
         {hasVariants &&
           options.map(({ id, name, values }, index) => (
             <div key={id}>
@@ -117,11 +117,11 @@ const ProductForm = ({ product }: IProductForm) => {
         </div>
       </fieldset>
       <div
-        className={`${styles.descriptionHtml} mb-4 order-3`}
+        className={`${styles.descriptionHtml} text-copy mb-4 order-3`}
         dangerouslySetInnerHTML={{ __html: descriptionHtml }}
       />
       <fieldset className="border border-contrast border-dotted rounded-1 px-5 py-4 order-4">
-        <ul className="flex flex-wrap md:mb-4">
+        <ul className="flex flex-wrap md:mb-4 text-copy">
           <li className="flex items-start w-full pb-2.5">
             <span className="block mt-0.5 mr-2">
               <Icon name="Box" size={14} />

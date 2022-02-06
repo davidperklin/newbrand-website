@@ -4,27 +4,38 @@ import { IProductDisplay } from './ProductDisplay.types'
 import ProductDisplayGrid from './ProductDisplayGrid'
 import ProductImageGallery from './ProductImageGallery/ProductImageGallery'
 import ProductForm from './ProductForm'
-import { Link } from 'gatsby'
-import { Icon } from 'src/@ds'
+import Breadcrumbs, { Crumb } from '@components/common/Breadcrumbs'
 
 const ProductDisplay = ({ product }: IProductDisplay) => {
+  const crumbs: Crumb[] = [
+    {
+      label: 'NEW BRAND',
+      path: '/',
+    },
+    {
+      label: product.productType,
+      path: `/${
+        product.productType === 'Clothing' ? 'clothing' : 'sneakers'
+      }?ref=p_${product.id}`,
+    },
+    {
+      label: product.title,
+      path: '/',
+      isActive: true,
+    },
+  ]
   return (
     <Container>
-      <ProductDisplayGrid
-        gallery={<ProductImageGallery product={product} />}
-        form={<ProductForm product={product} />}
-      />
+      <div className="mt-6">
+        <Breadcrumbs crumbs={crumbs} />
+        <ProductDisplayGrid
+          gallery={<ProductImageGallery product={product} />}
+          form={<ProductForm product={product} />}
+        />
+      </div>
+
       <div className="mt-8 mb-6">
-        <Link
-          to={`/${
-            product.productType === 'Clothing' ? 'clothing' : 'sneakers'
-          }?ref=p_${product.id}`}
-          className="inline-flex items-center text-contrast hover:no-underline hover:border-contrast border-b border-transparent border-dotted"
-        >
-          <Icon name="ArrowLeft" className="mr-1" />
-          Back to{' '}
-          {product.productType === 'Clothing' ? 'clothing' : 'sneakers'}
-        </Link>
+        <Breadcrumbs crumbs={crumbs} />
       </div>
     </Container>
   )

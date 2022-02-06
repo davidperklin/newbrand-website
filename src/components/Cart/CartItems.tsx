@@ -24,7 +24,6 @@ const CartItems = ({ items, subtotal }: ICartItems) => {
               <CartItem item={i} index={index} />
             ))}
           </ul>
-          {/* <div className="text-right">Subtotal: {subtotal}</div> */}
           <div className="border border-contrast border-dotted px-4 py-3 mb-6 rounded-1">
             <div className="flex justify-between items-center flex-col md:flex-row">
               <div className="mb-2 md:mb-0 text-center md:text-left">

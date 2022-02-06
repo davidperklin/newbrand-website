@@ -1,47 +1,47 @@
 .gallery__imageWrapper {
-  height: calc(100vh - 52px);
-  min-height: 300px;
+  margin: 6px;
+  .gallery_fullScreen {
+    background-color: var(--prod-img-bg-color);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    overflow-y: scroll;
+    cursor: url("data:image/svg+xml,%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M2 9V7h12v2z'/%3E%3C/svg%3E"),
+      zoom-out;
+  }
 }
 .gallery__image {
-  cursor: pointer;
+  cursor: url("data:image/svg+xml,%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 2H7v5H2v2h5v5h2V9h5V7H9V2z' fill='%23000'/%3E%3C/svg%3E"),
+    crosshair;
 }
 .gallery {
 }
-.gallery_fullScreen {
-  background-color: #fff;
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99999;
-  overflow-y: scroll;
-  .gallery__image {
-    cursor: zoom-out;
-  }
-  .gallery__closeNote {
-    position: fixed;
-    top: 22px;
-    right: 22px;
-    text-align: right;
-    font-size: var(--small-font-size);
-    display: block;
-    appearance: unset;
-    opacity: 1;
-    z-index: 999999;
-    cursor: zoom-out;
-    pointer-events: all;
-  }
-}
+
 .gallery__closeNote {
   display: none;
   opacity: 0;
   appearance: none;
   pointer-events: none;
 }
-
+.gallery__closeNote_isVisible {
+  position: fixed;
+  top: 22px;
+  right: 22px;
+  text-align: right;
+  font-size: var(--small-font-size);
+  display: block;
+  appearance: unset;
+  opacity: 1;
+  z-index: 999999;
+  cursor: url("data:image/svg+xml,%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M2 9V7h12v2z'/%3E%3C/svg%3E"),
+    zoom-out;
+  pointer-events: all;
+}
 // Swiper
 .swiperWrapper {
   margin: 0 -16px;
@@ -55,7 +55,8 @@
   width: 54px !important;
   margin-bottom: 4px;
   outline-offset: 1px;
-  cursor: pointer;
+  cursor: url("data:image/svg+xml,%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M2 9V7h12v2z'/%3E%3C/svg%3E"),
+    zoom-out;
 }
 .productImageGallery__thumbSlide_active {
   outline: 1px solid var(--contrast-color);

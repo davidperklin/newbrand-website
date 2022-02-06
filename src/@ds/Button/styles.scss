@@ -10,6 +10,8 @@
   border-radius: var(--radius1);
   box-shadow: var(--btn-shadow);
   font-weight: var(--font-weight-semiBold);
+  text-transform: uppercase;
+  letter-spacing: var(--uppercase-letter-spacing);
   &:focus-visible {
     box-shadow: var(--input-focus-shadow);
     outline: 1px dotted var(--input-focus-border-color);

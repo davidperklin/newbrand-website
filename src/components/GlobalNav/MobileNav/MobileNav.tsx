@@ -17,7 +17,7 @@ const MobileNav = () => {
   return (
     <>
       <Helmet>
-        <body data-scroll-locked={navIsOpen} />
+        <body data-mn-isOpen={navIsOpen} />
       </Helmet>
       <header
         className={`mobileNavHeader ${navIsOpen ? 'mn_isOpen' : ''}`}
@@ -50,7 +50,7 @@ const MobileNav = () => {
               >
                 <Link
                   to={i.path}
-                  className="mobileNav__listItem__link"
+                  className="mobileNav__listItem__link uppercase"
                   onClick={() => setNavIsOpen(!navIsOpen)}
                 >
                   {i.label}

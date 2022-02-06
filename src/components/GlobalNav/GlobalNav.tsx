@@ -1,16 +1,14 @@
 import React from 'react'
 import Brand from './Brand'
 import * as styles from './nb.module.scss'
-import GnLeftMenu from './LeftMenu'
 import GnRightMenu from './RightMenu'
 
 const GlobalNav = () => {
   return (
-    <nav className={styles.nav}>
-      <GnLeftMenu />
+    <header className={styles.nav}>
       <Brand />
       <GnRightMenu />
-    </nav>
+    </header>
   )
 }
 export default GlobalNav

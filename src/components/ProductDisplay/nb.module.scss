@@ -1,6 +1,6 @@
 .productDisplayGrid__formArea {
   @media (min-width: 768px) {
-    top: 48px;
+    top: calc(var(--gn-height) + 12px);
   }
 }
 .productDisplayGrid__formAreaInner {
