@@ -11,12 +11,12 @@ const AnnouncementBar = () => {
       <div className="w-full h-full text-center flex items-center justify-center px-2 font-medium uppercase">
         <img
           src="https://nb-marketing-assets.s3.amazonaws.com/icons/ca-clag.svg"
-          className="h-2.5 mr-2 mb-0.5"
+          className="h-2.5 mr-2 mb-0.5 hidden md:inline-block"
         />
         FREE EXPRESS SHIPPING ON ALL ORDERS ACROSS CANADA
         <img
           src="https://nb-marketing-assets.s3.amazonaws.com/icons/ca-clag.svg"
-          className="h-2.5 ml-2 mb-0.5"
+          className="h-2.5 ml-2 mb-0.5 hidden md:inline-block"
         />
       </div>
     </div>
