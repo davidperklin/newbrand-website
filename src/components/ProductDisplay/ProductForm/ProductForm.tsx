@@ -117,7 +117,7 @@ const ProductForm = ({ product }: IProductForm) => {
         </div>
       </fieldset>
       <div
-        className={`${styles.descriptionHtml} text-copy mb-4 order-3`}
+        className={`${styles.descriptionHtml} text-copy mb-8 order-3`}
         dangerouslySetInnerHTML={{ __html: descriptionHtml }}
       />
       <fieldset className="border border-contrast border-dotted rounded-1 px-5 py-4 order-4">

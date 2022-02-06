@@ -10,7 +10,7 @@ const EmptyCart = () => {
   return (
     <Container>
       <FullScreenCentered>
-        <div className="text-center">
+        <div className="text-center text-copy">
           <div role="heading" aria-level={1}>
             Your cart is empty.
           </div>

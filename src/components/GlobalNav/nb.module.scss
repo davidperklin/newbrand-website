@@ -6,7 +6,7 @@
   padding: 0 20px;
   position: sticky;
   top: 0;
-  z-index: var(--z2);
+  z-index: var(--z3);
   justify-content: space-between;
   display: none;
   appearance: none;
@@ -22,13 +22,8 @@
 }
 .brand {
   box-sizing: content-box;
-  border: 1px dotted rgba(0, 0, 0, 0);
   position: relative;
   height: 12px;
-  &:hover {
-    border-color: var(--contrast-color);
-    text-decoration: none;
-  }
 }
 .brand__fill {
   fill: var(--contrast-color);

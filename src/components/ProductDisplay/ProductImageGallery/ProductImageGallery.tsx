@@ -29,25 +29,35 @@ const ProductImageGallery = ({ product }: IProductImageGallery) => {
         >
           Click anywhere to close
         </div>
-        {product.images.map((image, index) => (
-          <GatsbyImage
-            image={image.gatsbyImageData}
-            alt="Product image"
-            objectFit="contain"
-            class={styles.gallery__imageWrapper}
-            imgClassName={`${styles.gallery__image} ${
-              imageFullScreenIndex === index
-                ? styles.gallery_fullScreen
-                : ''
-            }`}
-            onClick={
-              imageFullScreenIndex === index
-                ? () => setImageFullScreenIndex(null)
-                : () => setImageFullScreenIndex(index)
-            }
-            key={index}
-          />
-        ))}
+        <div className="flex flex-wrap">
+          {product.images.map((image, index) => (
+            <div
+              key={index}
+              className={`${
+                product.productType === 'Footwear'
+                  ? 'p-1.5 md:w-1/2'
+                  : 'p-1.5'
+              }`}
+            >
+              <GatsbyImage
+                image={image.gatsbyImageData}
+                alt="Product image"
+                objectFit="contain"
+                class={`${styles.gallery__imageWrapper}`}
+                imgClassName={`${styles.gallery__image} ${
+                  imageFullScreenIndex === index
+                    ? styles.gallery_fullScreen
+                    : ''
+                }`}
+                onClick={
+                  imageFullScreenIndex === index
+                    ? () => setImageFullScreenIndex(null)
+                    : () => setImageFullScreenIndex(index)
+                }
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </>
   )

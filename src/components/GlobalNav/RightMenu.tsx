@@ -8,7 +8,7 @@ const GnRightMenu = () => {
   const { cart } = useStoreContext()
   return (
     <ul className={`${styles.menu} ${styles.menu_right}`}>
-      <li className={styles.item}>
+      <li className={`${styles.item} ${styles.item__hasDivider}`}>
         <Link to="/sneakers?ref=desktop_nav" className={styles.link}>
           Sneakers
         </Link>

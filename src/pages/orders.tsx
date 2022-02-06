@@ -12,7 +12,10 @@ const OrdersPage = () => {
       />
 
       <Container>
-        <div style={{ maxWidth: '540px' }} className="pt-12 pb-12 mx-auto">
+        <div
+          style={{ maxWidth: '540px' }}
+          className="pt-12 pb-12 mx-auto text-copy"
+        >
           <Accordion title="Shipping Policy">
             <article>
               <p>

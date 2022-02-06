@@ -39,7 +39,10 @@
   --z3: 99;
   --z4: 999;
 
-  --gn-height: 54px;
+  --gn-height: 48px;
+  @media (min-width: 768px) {
+    --gn-height: 54px;
+  }
   --site-container-width: 1204px;
   // sizes for buttons, inputs, etc.
   --size-large: 32px;

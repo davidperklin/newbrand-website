@@ -10,7 +10,9 @@ const MainLayout = ({ children }) => {
       <GlobalNav />
       <MobileNav />
       <Main>
-        <div style={{ minHeight: 'calc(100vh - 48px - 51px)' }}>
+        <div
+          style={{ minHeight: 'calc(100vh - var(--gn-height) - 51px)' }}
+        >
           {children}
         </div>
       </Main>

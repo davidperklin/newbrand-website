@@ -35,13 +35,13 @@ const CartItem = ({ item, index }: ICartItem) => {
             />
           </Link>
         </div>
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col justify-between uppercase">
           <div>
             <Link
               to={`/${PRODUCT_PAGE_BASE_SLUG}/${item.variant.product.handle}?ref=cart_item`}
               className="text-contrast hover:no-underline"
             >
-              <div className="">
+              <div className="font-bold">
                 {item.title} ({item.quantity})
               </div>
             </Link>
@@ -64,7 +64,7 @@ const CartItem = ({ item, index }: ICartItem) => {
       </div>
 
       <div>
-        <div className="text-right">
+        <div className="text-right font-bold">
           {formatPrice(item.variant.priceV2.amount)}
         </div>
       </div>

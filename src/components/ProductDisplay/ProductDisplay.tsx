@@ -13,7 +13,7 @@ const ProductDisplay = ({ product }: IProductDisplay) => {
       path: '/',
     },
     {
-      label: product.productType,
+      label: product.productType === 'Clothing' ? 'Clothing' : 'Sneakers',
       path: `/${
         product.productType === 'Clothing' ? 'clothing' : 'sneakers'
       }?ref=p_${product.id}`,
