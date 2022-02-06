@@ -48,7 +48,7 @@ const CartItems = ({ items, subtotal }: ICartItems) => {
             </div>
           </div>
         </div>
-        <div className="mt-20">
+        <div className="md:mt-20 mt-12">
           <div className="text-copy text-center">
             Not finished shopping? Continue browsing{' '}
             <Link to="/sneakers?ref=cart">sneakers</Link> or{' '}
