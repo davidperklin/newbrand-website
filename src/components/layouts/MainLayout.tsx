@@ -1,15 +1,21 @@
+import AnnouncementBar from '@components/AnnouncementBar'
 import Footer from '@components/Footer'
-import GlobalNav, { MobileNav } from '@components/GlobalNav'
+import GlobalNav, { Main, MobileNav } from '@components/GlobalNav'
 import React from 'react'
 
 const MainLayout = ({ children }) => {
   return (
     <>
+      <AnnouncementBar />
       <GlobalNav />
       <MobileNav />
-      <div style={{ minHeight: 'calc(100vh - 48px - 51px)' }}>
-        {children}
-      </div>
+      <Main>
+        <div
+          style={{ minHeight: 'calc(100vh - var(--gn-height) - 51px)' }}
+        >
+          {children}
+        </div>
+      </Main>
 
       <Footer />
     </>

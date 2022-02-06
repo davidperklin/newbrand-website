@@ -9,7 +9,7 @@ const Page404 = () => {
       <Head title="Page Not Found" description="Page not found." />
       <Container>
         <FullScreenCentered>
-          <div className="text-center">
+          <div className="text-center text-copy">
             <div role="heading" aria-level={1}>
               Sorry, we couldn't find that page.
             </div>

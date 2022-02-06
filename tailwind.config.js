@@ -34,6 +34,7 @@ module.exports = {
       small: 'var(--small-font-size)',
       mini: 'var(--mini-font-size)',
       large: 'var(--large-font-size)',
+      copy: 'var(--copy-font-size)',
     },
     borderRadius: {
       1: 'var(--radius1)',

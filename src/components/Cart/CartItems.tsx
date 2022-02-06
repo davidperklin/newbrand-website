@@ -1,5 +1,6 @@
 import { Container } from '@components/common'
 import useStoreContext from '@hooks/useStoreContext'
+import { Link } from 'gatsby'
 import React from 'react'
 import { Button } from 'src/@ds'
 import { LineItem } from 'src/api'
@@ -14,8 +15,8 @@ const CartItems = ({ items, subtotal }: ICartItems) => {
   const { handleCheckout } = useStoreContext()
   return (
     <Container>
-      <div style={{ maxWidth: '760px' }} className="mx-auto pt-6">
-        <div role="heading" aria-level={1} className="mb-2">
+      <div style={{ maxWidth: '760px' }} className="mx-auto pt-8 md:pt-12">
+        <div role="heading" aria-level={1} className="mb-4 uppercase">
           Your Shopping Cart
         </div>
         <div>
@@ -24,9 +25,8 @@ const CartItems = ({ items, subtotal }: ICartItems) => {
               <CartItem item={i} index={index} />
             ))}
           </ul>
-          {/* <div className="text-right">Subtotal: {subtotal}</div> */}
           <div className="border border-contrast border-dotted px-4 py-3 mb-6 rounded-1">
-            <div className="flex justify-between items-center flex-col md:flex-row">
+            <div className="flex justify-between items-center flex-col md:flex-row text-copy">
               <div className="mb-2 md:mb-0 text-center md:text-left">
                 Subtotal for {items.length} item
                 {items.length > 1 ? 's' : ''}:{' '}
@@ -46,6 +46,13 @@ const CartItems = ({ items, subtotal }: ICartItems) => {
                 </Button>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="mt-20">
+          <div className="text-copy text-center">
+            Not finished shopping? Continue browsing{' '}
+            <Link to="/sneakers?ref=cart">sneakers</Link> or{' '}
+            <Link to="/clothing?ref=cart">clothing</Link>.
           </div>
         </div>
       </div>

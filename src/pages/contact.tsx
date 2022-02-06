@@ -12,7 +12,7 @@ const ContactPage = () => {
 
       <Container>
         <div style={{ maxWidth: '540px' }} className="pt-12 pb-12 mx-auto">
-          <article className="md:text-center">
+          <article className="md:text-center text-copy">
             To contact customer support, email{' '}
             <a href="mailto:support@shopnewbrand.com">
               support@shopnewbrand.com

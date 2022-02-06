@@ -1,17 +1,14 @@
-import { Container } from '@components/common'
 import React from 'react'
 import { ProductGridProps } from './ProductGrid.types'
 import ProductGridItem from './ProductGridItem'
 
 const ProductGrid = ({ products }: ProductGridProps) => {
   return (
-    <Container toEdgeOnMobile>
-      <div className="flex flex-wrap">
-        {products.map((product) => (
-          <ProductGridItem product={product} />
-        ))}
-      </div>
-    </Container>
+    <div className="flex flex-wrap -mx-1.5">
+      {products.map((product) => (
+        <ProductGridItem product={product} />
+      ))}
+    </div>
   )
 }
 export default ProductGrid

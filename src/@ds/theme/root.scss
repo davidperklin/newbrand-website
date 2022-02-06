@@ -6,12 +6,13 @@
     'Cantarell', 'Fira Sans', 'Droid Sans';
 
   --base-line-height: 1.36;
-  --base-font-size: 11px;
-  --small-font-size: 11px;
+  --base-font-size: 10px;
+  --copy-font-size: 11px;
+  --small-font-size: 10px;
   --mini-font-size: 10px;
   --large-font-size: 13px;
 
-  --uppercase-letter-spacing: 0.25px;
+  --uppercase-letter-spacing: 0.03em;
 
   --font-weight-light: 300;
   --font-weight-normal: 400;
@@ -38,6 +39,10 @@
   --z3: 99;
   --z4: 999;
 
+  --gn-height: 48px;
+  @media (min-width: 768px) {
+    --gn-height: 54px;
+  }
   --site-container-width: 1204px;
   // sizes for buttons, inputs, etc.
   --size-large: 32px;
@@ -75,13 +80,20 @@
 
   --shadow1: 0 5px 10px rgba(0, 0, 0, 0.16);
 
+  --prod-img-bg-color: #ebebeb;
+
   // added utils
-  .uppercase-text {
+  body[data-scroll-locked='true'],
+  body[data-mn-isOpen='true'] {
+    overflow: hidden !important;
+    height: 100% !important;
+  }
+  .uppercase {
     text-transform: uppercase;
     letter-spacing: var(--uppercase-letter-spacing);
   }
   .list-text {
-    list-style: disc;
+    list-style: square;
     li {
       margin-left: 12px;
     }

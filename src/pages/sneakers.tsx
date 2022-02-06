@@ -3,6 +3,8 @@ import { graphql } from 'gatsby'
 
 import ProductGrid from '@components/ProductGrid'
 import Head from '@components/Head'
+import Breadcrumbs, { Crumb } from '@components/common/Breadcrumbs'
+import { Container } from '@components/common'
 
 export const query = graphql`
   {
@@ -35,6 +37,19 @@ export const query = graphql`
   }
 `
 
+const crumbs: Crumb[] = [
+  {
+    label: 'New Brand',
+    path: '/',
+    isActive: false,
+  },
+  {
+    label: 'Sneakers',
+    path: '/sneakers',
+    isActive: true,
+  },
+]
+
 const SneakersPage = ({ data }) => {
   return (
     <>
@@ -42,7 +57,12 @@ const SneakersPage = ({ data }) => {
         title="Minimal Sneakers Made in Italy"
         description="Shop minimal Italian leather sneakers. FREE EXPRESS SHIPPING ACROSS CANADA."
       />
-      <ProductGrid products={data.allShopifyProduct.nodes} />
+      <Container>
+        <div className="mt-8 md:mt-20">
+          <Breadcrumbs crumbs={crumbs} />
+          <ProductGrid products={data.allShopifyProduct.nodes} />
+        </div>
+      </Container>
     </>
   )
 }

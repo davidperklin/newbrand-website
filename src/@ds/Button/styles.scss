@@ -10,6 +10,8 @@
   border-radius: var(--radius1);
   box-shadow: var(--btn-shadow);
   font-weight: var(--font-weight-semiBold);
+  text-transform: uppercase;
+  letter-spacing: var(--uppercase-letter-spacing);
   &:focus-visible {
     box-shadow: var(--input-focus-shadow);
     outline: 1px dotted var(--input-focus-border-color);
@@ -21,8 +23,8 @@
 }
 .button_sz-def {
   line-height: var(--size-default);
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 19px;
+  padding-right: 19px;
 }
 .button_sz-compact {
   line-height: var(--size-compact);

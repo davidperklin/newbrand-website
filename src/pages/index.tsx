@@ -6,11 +6,19 @@ import Helmet from 'react-helmet'
 
 export const query = graphql`
   {
-    shopifyProduct(id: { eq: "3ad05c48-ede9-5358-a073-4a940bd94c19" }) {
+    prod1: shopifyProduct(
+      id: { eq: "3ad05c48-ede9-5358-a073-4a940bd94c19" }
+    ) {
       images {
         gatsbyImageData
       }
-      handle
+    }
+    prod2: shopifyProduct(
+      id: { eq: "134930e5-e7c6-547c-a97b-402ab3260ef4" }
+    ) {
+      images {
+        gatsbyImageData
+      }
     }
   }
 `
@@ -66,8 +74,8 @@ const HomePage = ({ data }) => {
         ]}
       />
       <HomeComponent
-        image={data.shopifyProduct.images[0].gatsbyImageData}
-        handle={data.shopifyProduct.handle}
+        image={data.prod1.images[0].gatsbyImageData}
+        image2={data.prod2.images[0].gatsbyImageData}
       />
     </>
   )

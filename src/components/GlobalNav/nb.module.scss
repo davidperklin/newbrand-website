@@ -1,37 +1,29 @@
 .nav {
-  --gn-height: 48px;
   height: var(--gn-height);
   width: 100%;
   background-color: var(--base-color);
   align-items: center;
-  padding: 0 22px;
+  padding: 0 20px;
   position: sticky;
   top: 0;
-  z-index: var(--z2);
+  z-index: var(--z3);
   justify-content: space-between;
   display: none;
   appearance: none;
   @media (min-width: 768px) {
     display: flex;
     appearance: unset;
+    padding: 0 22px;
   }
 }
 .brandLink {
   display: flex;
-  width: 132px;
   justify-content: center;
 }
 .brand {
-  height: 10px;
-  padding: 8px;
   box-sizing: content-box;
-  border: 1px dotted rgba(0, 0, 0, 0);
   position: relative;
-  height: 10px;
-  &:hover {
-    border-color: var(--contrast-color);
-    text-decoration: none;
-  }
+  height: 12px;
 }
 .brand__fill {
   fill: var(--contrast-color);
@@ -39,13 +31,17 @@
 .menu {
   display: flex;
   margin: 0 -12px;
-  width: 45%;
 }
 .menu_right {
   justify-content: flex-end;
 }
 .item {
   margin: 0 12px;
+}
+.item__hasDivider {
+  padding-right: 24px;
+  margin-right: 12px;
+  border-right: 1px dotted var(--contrast-color);
 }
 .link {
   color: var(--contrast-color);
@@ -54,6 +50,8 @@
   align-items: center;
   border-bottom: 1px dotted rgba(0, 0, 0, 0);
   position: relative;
+  text-transform: uppercase;
+  letter-spacing: var(--uppercase-letter-spacing);
   &:hover {
     border-color: var(--contrast-color);
     text-decoration: none;
@@ -73,4 +71,16 @@
   top: -6px;
   border-radius: 100%;
   left: 6px;
+}
+
+//
+.main {
+  display: block;
+}
+.sideMenu {
+  position: fixed;
+  top: var(--gn-height);
+  height: calc(100vh - var(--gn-height));
+  bottom: 0;
+  left: 0;
 }

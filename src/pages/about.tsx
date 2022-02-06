@@ -13,7 +13,7 @@ const AboutPage = () => {
       <Container>
         <article
           style={{ maxWidth: '540px' }}
-          className="pt-12 pb-12 mx-auto"
+          className="pt-12 pb-12 mx-auto text-copy"
         >
           <div role="heading" aria-level={1} className="uppercase mb-4">
             About New Brand
