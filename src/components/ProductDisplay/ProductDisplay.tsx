@@ -26,8 +26,11 @@ const ProductDisplay = ({ product }: IProductDisplay) => {
   ]
   return (
     <Container>
-      <div className="mt-6">
-        <Breadcrumbs crumbs={crumbs} />
+      <div className="sm:mt-6">
+        <div className="sm:block hidden">
+          <Breadcrumbs crumbs={crumbs} />
+        </div>
+
         <ProductDisplayGrid
           gallery={<ProductImageGallery product={product} />}
           form={<ProductForm product={product} />}

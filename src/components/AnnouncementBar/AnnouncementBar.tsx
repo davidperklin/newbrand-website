@@ -1,4 +1,3 @@
-import { Container } from '@components/common'
 import React from 'react'
 
 const AnnouncementBar = () => {
