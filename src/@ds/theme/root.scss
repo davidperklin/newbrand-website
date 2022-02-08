@@ -46,7 +46,7 @@
   --site-container-width: 1204px;
   // sizes for buttons, inputs, etc.
   --size-large: 32px;
-  --size-default: 28px;
+  --size-default: 32px;
   --size-compact: 24px;
   --size-mini: 20px;
 
@@ -62,8 +62,8 @@
   --container-max-width: 1200px;
 
   // expressiveness
-  --radius1: 3px;
-  --radius2: 3px;
+  --radius1: 6px;
+  --radius2: 8px;
   --pill-radius: 30px;
 
   --bg-hover-transition-primary: background cubic-bezier(0, 0, 1, 1) 100ms;

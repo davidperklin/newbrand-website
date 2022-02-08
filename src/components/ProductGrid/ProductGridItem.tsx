@@ -52,7 +52,7 @@ const ProductGridItem = ({ product }: ProductGridItemProps) => {
           </div>
         </div>
 
-        <div className="mt-2.5">
+        <div className="mt-2">
           <div>
             <div
               role="heading"
@@ -75,7 +75,7 @@ const ProductGridItem = ({ product }: ProductGridItemProps) => {
                 ''
               )}
             </div>
-            <div className="mt-4">
+            <div className="mt-3.5">
               <span>
                 {formatPrice(product.priceRangeV2.minVariantPrice.amount)}{' '}
                 & free express shipping

@@ -42,6 +42,7 @@ const ProductForm = ({ product }: IProductForm) => {
       id="product-form"
       name="product_form"
       className="flex flex-col mb-8"
+      style={{ minHeight: 'calc(100vh - var(--gn-height))' }}
     >
       <div className="flex justify-between mb-2 order-1 mt-4 md:mt-0">
         <div role="heading" aria-level={1} className="uppercase font-bold">
@@ -78,7 +79,7 @@ const ProductForm = ({ product }: IProductForm) => {
         {hasSelected && available && (
           <span className="flex items-start text-success mt-1.5">
             <span className="flex mr-2">
-              <Icon name="Check2Circle" size={14} />
+              <Icon name="Check2Circle" size={14} className="mt-0.5" />
             </span>
             <span>
               <span className="font-medium">In stock</span>, ships free in
@@ -117,10 +118,10 @@ const ProductForm = ({ product }: IProductForm) => {
         </div>
       </fieldset>
       <div
-        className={`${styles.descriptionHtml} text-copy mb-8 order-3`}
+        className={`${styles.descriptionHtml} text-copy mb-6 order-3`}
         dangerouslySetInnerHTML={{ __html: descriptionHtml }}
       />
-      <fieldset className="border border-contrast border-dotted rounded-1 px-5 py-4 order-4">
+      <fieldset className="border border-contrast border-dotted rounded-2 px-5 py-4 order-4">
         <ul className="flex flex-wrap md:mb-4 text-copy">
           <li className="flex items-start w-full pb-2.5">
             <span className="block mt-0.5 mr-2">
@@ -156,9 +157,9 @@ const ProductForm = ({ product }: IProductForm) => {
             appearance="primary"
             disabled={!hasSelected}
             className="w-full"
-            pill
             shadow
             loading={loadingAddToCart}
+            pill
           >
             Add to cart
           </Button>
