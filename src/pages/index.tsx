@@ -1,4 +1,3 @@
-import Head from '@components/Head'
 import HomeComponent from '@components/HomeComponent'
 import { graphql } from 'gatsby'
 import React from 'react'
@@ -73,6 +72,18 @@ const HomePage = ({ data }) => {
           },
         ]}
       />
+      <Helmet>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "url": "https://www.shopnewbrand.com",
+              "name": "New Brand",
+            }
+          `}
+        </script>
+      </Helmet>
       <HomeComponent
         image={data.prod1.images[0].gatsbyImageData}
         image2={data.prod2.images[0].gatsbyImageData}
