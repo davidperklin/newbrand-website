@@ -54,15 +54,25 @@ const ProductGridItem = ({ product }: ProductGridItemProps) => {
 
         <div className="mt-2">
           <div>
+            {product.productType === 'Clothing' && (
+              <div className="block md:hidden ">
+                <img
+                  src="https://nb-marketing-assets.s3.amazonaws.com/icons/ca-clag.svg"
+                  className="h-2 md:h-2.5 mb-2"
+                />
+              </div>
+            )}
+
             <div
               role="heading"
               aria-level={2}
-              className="uppercase font-bold flex items-center"
+              className="uppercase items-center overflow-ellipsis break-words overflow-hidden"
+              style={{
+                display: '-webkit-box',
+                WebkitLineClamp: 2,
+                WebkitBoxOrient: 'vertical',
+              }}
             >
-              {/* <img
-                src="https://nb-marketing-assets.s3.amazonaws.com/icons/ca-clag.svg"
-                className="h-2.5 mr-1.5"
-              /> */}
               {product.title}
               {product.totalInventory === 0 ? (
                 <span className="ml-1">
@@ -75,7 +85,7 @@ const ProductGridItem = ({ product }: ProductGridItemProps) => {
                 ''
               )}
             </div>
-            <div className="mt-3.5">
+            <div className="md:mt-3.5 mt-2">
               <span>
                 {formatPrice(product.priceRangeV2.minVariantPrice.amount)}{' '}
                 & free express shipping

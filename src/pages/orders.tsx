@@ -37,7 +37,7 @@ const OrdersPage = () => {
               </p>
               <p>
                 If you have not received a shipping update two days after
-                placing your order, please reach out to use at{' '}
+                placing your order, please reach out to us at{' '}
                 <a href="mailto:support@shopnewbrand.com">
                   support@shopnewbrand.com
                 </a>

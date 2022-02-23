@@ -5,7 +5,8 @@
     BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans';
 
-  --base-line-height: 1.5;
+  --base-line-height: 1.4;
+  --copy-line-height: 1.5;
   --base-font-size: 10px;
   --copy-font-size: 11px;
   --small-font-size: 10px;
@@ -30,6 +31,10 @@
   h2 {
     font-size: 14px;
     line-height: 1.2;
+  }
+
+  .text-copy {
+    line-height: var(--copy-line-height);
   }
 
   // z-index

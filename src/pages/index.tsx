@@ -29,7 +29,7 @@ const HomePage = ({ data }) => {
         htmlAttributes={{
           lang: 'en',
         }}
-        title="New Brand | Sneakers Made in Italy, Clothing Made in Canada"
+        title="New Brand | Clothing Made in Canada, Sneakers Made in Italy"
         meta={[
           {
             name: `description`,

@@ -5,7 +5,7 @@ export function capsToCapitalize(string: String) {
   return string.charAt(0) + string.slice(1).toLowerCase()
 }
 
-export const formatPrice = (value) => `$${value.slice(0, -2)} CAD`
+export const formatPrice = (value) => `$${value.slice(0, -2)}`
 
 export function enumKeys<O extends object, K extends keyof O = keyof O>(
   obj: O

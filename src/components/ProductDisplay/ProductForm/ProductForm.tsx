@@ -121,7 +121,8 @@ const ProductForm = ({ product }: IProductForm) => {
         className={`${styles.descriptionHtml} text-copy mb-6 order-3`}
         dangerouslySetInnerHTML={{ __html: descriptionHtml }}
       />
-      <fieldset className="border border-contrast border-dotted rounded-2 px-5 py-4 order-4">
+
+      <fieldset className="bg-shade50 rounded-2 px-5 py-4 order-4">
         <ul className="flex flex-wrap md:mb-4 text-copy">
           <li className="flex items-start w-full pb-2.5">
             <span className="block mt-0.5 mr-2">

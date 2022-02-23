@@ -13,7 +13,7 @@ const ProductTemplate = ({ pageContext }) => {
         }${product.title}${
           product.productType === 'Footwear' ? ' - Made in Italy' : ''
         }`}
-        description={`FREE EXPRESS SHIPPING ACROSS CANADA - ${product.description}`}
+        description={`${product.description}`}
         ogImage={product.images[0].originalSrc}
       />
       <Helmet>
