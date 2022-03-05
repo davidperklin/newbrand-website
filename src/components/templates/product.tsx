@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 
 const ProductTemplate = ({ pageContext }) => {
   const { product } = pageContext
+
   return (
     <>
       <Head
@@ -22,16 +23,15 @@ const ProductTemplate = ({ pageContext }) => {
             {
               "@context": "https://schema.org/",
               "@type": "Product",
-              "name": ${product.title},
-              "image": ${product.images},
-              "description": ${product.description},
+              "name": "${product.title}",
+              "description": "${product.description}",
               "brand": {
                 "@type": "Brand",
                 "name": "New Brand"
               },
-              "countryOfAssembly": ${
+              "countryOfAssembly": "${
                 product.productType === 'Clothing' ? 'Canada' : 'Italy'
-              },
+              }",
               "offers": {
                 "@type": "Offer",
                 "url": ${`https://shopnewbrand.com/p/${product.handle}`},
