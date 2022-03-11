@@ -122,7 +122,7 @@ const ProductForm = ({ product }: IProductForm) => {
         dangerouslySetInnerHTML={{ __html: descriptionHtml }}
       />
 
-      <fieldset className="bg-shade50 rounded-2 px-5 py-4 order-4">
+      <fieldset className="border border-contrast border-dotted rounded-2 px-5 py-4 order-4">
         <ul className="flex flex-wrap md:mb-4 text-copy">
           <li className="flex items-start w-full pb-2.5">
             <span className="block mt-0.5 mr-2">
@@ -152,7 +152,7 @@ const ProductForm = ({ product }: IProductForm) => {
           </li>
         </ul>
 
-        <div className="hidden md:block">
+        <div className="mt-5 md:mt-0 block">
           <Button
             type="submit"
             appearance="primary"
@@ -160,7 +160,6 @@ const ProductForm = ({ product }: IProductForm) => {
             className="w-full"
             shadow
             loading={loadingAddToCart}
-            pill
           >
             Add to cart
           </Button>
