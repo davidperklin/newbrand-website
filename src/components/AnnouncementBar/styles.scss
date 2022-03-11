@@ -1,0 +1,25 @@
+.announcement-bar {
+  background-color: var(--contrast-color);
+  color: #fff;
+  display: flex;
+}
+.announcement-bar__wrapper {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 8px 0;
+}
+.announcement-bar__text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 150px;
+  animation: animateAnouncementText 10s linear infinite;
+  letter-spacing: var(--uppercase-letter-spacing);
+}
+
+@keyframes animateAnouncementText {
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
