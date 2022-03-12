@@ -66,7 +66,7 @@ const ProductGridItem = ({ product }: ProductGridItemProps) => {
             <div
               role="heading"
               aria-level={2}
-              className="uppercase items-center overflow-ellipsis break-words overflow-hidden"
+              className="uppercase items-center overflow-ellipsis break-words overflow-hidden font-semibold"
               style={{
                 display: '-webkit-box',
                 WebkitLineClamp: 2,

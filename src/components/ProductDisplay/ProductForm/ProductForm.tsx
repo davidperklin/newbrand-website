@@ -41,14 +41,14 @@ const ProductForm = ({ product }: IProductForm) => {
       onSubmit={handleSubmit}
       id="product-form"
       name="product_form"
-      className="flex flex-col mb-8"
+      className="flex flex-col mb-8 "
       style={{ minHeight: 'calc(100vh - var(--gn-height))' }}
     >
-      <div className="flex justify-between mb-2 order-1 mt-4 lg:mt-0">
-        <div role="heading" aria-level={1} className="uppercase font-bold">
+      <div className="flex justify-between mb-2 order-1 mt-4 lg:mt-0 font-semibold">
+        <div role="heading" aria-level={1} className="uppercase">
           {product.title}
         </div>
-        <div className="uppercase font-bold">{price}</div>
+        <div className="uppercase ">{price}</div>
       </div>
 
       <fieldset className="mb-2 order-2 text-copy">
