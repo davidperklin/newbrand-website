@@ -4,7 +4,8 @@ const FullScreenCentered = ({ children }) => {
   return (
     <div
       style={{
-        minHeight: 'calc(100vh - var(--gn-height) - 51px)',
+        minHeight:
+          'calc(100vh - var(--gn-height) - var(--footer-height) - var(--announcement-bar-height))',
         paddingBottom: 'var(--gn-height)',
       }}
       className="flex items-center justify-center"

@@ -27,7 +27,7 @@
   outline-offset: 2px;
   &:focus {
     // border-color: var(--input-focus-border-color);
-    box-shadow: var(--input-focus-shadow);
+    // box-shadow: var(--input-focus-shadow);
     outline: 1px dotted var(--contrast-color);
   }
 

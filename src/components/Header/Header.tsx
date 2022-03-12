@@ -38,8 +38,8 @@ const Header = () => {
                 <li key={item.path} className="pl-6">
                   <Link to={item.path} className={styles.link}>
                     {item.label}{' '}
-                    {item.path === '/cart' &&
-                      (cart ? `(${cart.lineItems.length})` : '0')}
+                    {item.path === '/cart?ref=nav' &&
+                      (cart ? `(${cart.lineItems.length})` : '(0)')}
                   </Link>
                 </li>
               ))}
