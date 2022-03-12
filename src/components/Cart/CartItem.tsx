@@ -3,6 +3,7 @@ import useStoreContext from '@hooks/useStoreContext'
 import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
+import { Icon } from 'src/@ds'
 import { LineItem } from 'src/api'
 import { PRODUCT_PAGE_BASE_SLUG } from 'src/constants'
 import { formatPrice } from 'src/utils'
@@ -35,20 +36,23 @@ const CartItem = ({ item, index }: ICartItem) => {
             />
           </Link>
         </div>
-        <div className="flex flex-col justify-between uppercase">
+        <div className="flex flex-col justify-between">
           <div>
             <Link
               to={`/${PRODUCT_PAGE_BASE_SLUG}/${item.variant.product.handle}?ref=cart_item`}
-              className="text-contrast hover:no-underline"
+              className="text-contrast hover:no-underline  uppercase font-semibold"
             >
-              <div className="font-bold">
-                {item.title} ({item.quantity})
+              <div>
+                {item.title}, {item.variant.title}
               </div>
             </Link>
 
-            <div className="text-light mt-0.5">{item.variant.title}</div>
+            <div className=" mt-0.5">
+              <span className="text-success ">In stock</span>
+            </div>
           </div>
           <div>
+            <span>Quantity: {item.quantity} | </span>
             <button
               role="button"
               onClick={handleRemoveItem}
@@ -64,7 +68,7 @@ const CartItem = ({ item, index }: ICartItem) => {
       </div>
 
       <div>
-        <div className="text-right font-bold">
+        <div className="text-right font-semibold">
           {formatPrice(item.variant.priceV2.amount)}
         </div>
       </div>

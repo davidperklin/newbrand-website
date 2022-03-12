@@ -35,6 +35,11 @@ module.exports = {
       large: 'var(--large-font-size)',
       copy: 'var(--copy-font-size)',
     },
+    fontWeight: {
+      bold: 'var(--font-weight-bold)',
+      semibold: 'var(--font-weight-semibold)',
+      normal: 'var(--font-weight-normal)',
+    },
     borderRadius: {
       1: 'var(--radius1)',
       2: 'var(--radius2)',

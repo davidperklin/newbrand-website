@@ -2,7 +2,7 @@
   --base-color: #fff;
   --contrast-color: #1f1f1f;
   --text-color: #1f1f1f;
-  --text-light: #4a5158;
+  --text-light: var(--shade400);
   --border-color: var(--shade200);
   --link-color: #06c;
 
@@ -13,7 +13,7 @@
   --shade100: #e8e8ed;
   --shade200: rgb(231, 231, 231);
   --shade300: #bcbcc0;
-  --shade400: #afafaf;
+  --shade400: #a3a3a3;
   --shade500: #6b6b6b;
   --shade600: #424245;
   --shade700: #1f1f1f;
