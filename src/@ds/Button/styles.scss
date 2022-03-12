@@ -48,14 +48,14 @@
   }
 }
 .button_primary {
-  background: var(--primary-btn-bg);
+  background-color: var(--primary-btn-bg);
   border-color: var(--primary-btn-border-color);
   color: var(--primary-btn-color);
   &:hover {
-    background-color: var(--primary-btn-bg-hover);
+    background-color: var(--shade600);
   }
   &:active {
-    background-color: var(--primary-btn-bg-active);
+    background-color: var(--shade500);
   }
 }
 .button_full-width {

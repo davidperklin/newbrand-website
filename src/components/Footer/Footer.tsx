@@ -23,7 +23,7 @@ const Footer = () => {
             <ul className="flex items-center">
               <li className="mr-6">
                 <Link to="/policies" className="hover:no-underline">
-                  Policies
+                  Terms & Conditions
                 </Link>
               </li>
               <li className="flex items-center">

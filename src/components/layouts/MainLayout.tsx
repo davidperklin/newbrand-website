@@ -1,6 +1,6 @@
 import AnnouncementBar from '@components/AnnouncementBar'
 import Footer from '@components/Footer'
-import { MobileNav } from '@components/GlobalNav'
+import MobileNav from '@components/MobileNav'
 import Header from '@components/Header'
 import React from 'react'
 

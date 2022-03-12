@@ -45,6 +45,9 @@
 // Swiper
 .swiperWrapper {
   margin: 0 -16px;
+  @media (min-width: 768px) {
+    margin: 0 -22px;
+  }
 }
 .productImageGallery__thumbs {
   width: 100%;

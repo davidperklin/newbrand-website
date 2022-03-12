@@ -34,6 +34,7 @@
   text-transform: uppercase;
   letter-spacing: var(--uppercase-letter-spacing);
   border-bottom: 1px dotted rgba(0, 0, 0, 0);
+  font-weight: var(--font-weight-bold);
   &:hover {
     text-decoration: none;
     border-color: currentColor;

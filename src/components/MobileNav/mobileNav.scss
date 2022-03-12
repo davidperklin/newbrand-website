@@ -125,6 +125,7 @@
 .mobileNav__listItem__link {
   color: var(--contrast-color);
   padding: 8px 0px;
+  font-weight: var(--font-weight-bold);
   &:hover {
     text-decoration: none;
   }

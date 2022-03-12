@@ -1,28 +1,8 @@
 import Hero from '@components/Hero'
-import { graphql } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
 
-export const query = graphql`
-  {
-    prod1: shopifyProduct(
-      id: { eq: "3ad05c48-ede9-5358-a073-4a940bd94c19" }
-    ) {
-      images {
-        gatsbyImageData
-      }
-    }
-    prod2: shopifyProduct(
-      id: { eq: "134930e5-e7c6-547c-a97b-402ab3260ef4" }
-    ) {
-      images {
-        gatsbyImageData
-      }
-    }
-  }
-`
-
-const HomePage = ({ data }) => {
+const HomePage = () => {
   return (
     <>
       <Helmet
@@ -34,7 +14,7 @@ const HomePage = ({ data }) => {
           {
             name: `description`,
             content:
-              'Shop minimal sneakers made in Italy and made in Canada essentials clothing - hoodies, joggers and crewnecks.',
+              'Shop made in Canada essentials clothing - hoodies, joggers and crewnecks - and minimal sneakers made in Italy.',
           },
           {
             property: `og:title`,
@@ -43,7 +23,7 @@ const HomePage = ({ data }) => {
           {
             property: `og:description`,
             content:
-              'Shop minimal sneakers made in Italy and made in Canada essentials clothing - hoodies, joggers and crewnecks.',
+              'Shop made in Canada essentials clothing - hoodies, joggers and crewnecks - and minimal sneakers made in Italy.',
           },
           {
             property: `og:type`,
@@ -60,7 +40,7 @@ const HomePage = ({ data }) => {
           {
             name: `twitter:description`,
             content:
-              'Shop minimal sneakers made in Italy and made in Canada essentials clothing - hoodies, joggers and crewnecks.',
+              'Shop made in Canada essentials clothing - hoodies, joggers and crewnecks - and minimal sneakers made in Italy.',
           },
           {
             name: `og:image`,

@@ -5,22 +5,22 @@ interface NavItem {
 
 export const leftMenuItems: NavItem[] = [
   {
-    label: 'Sneakers',
-    path: '/sneakers',
+    label: 'Clothing',
+    path: '/clothing?ref=nav',
   },
   {
-    label: 'Clothing',
-    path: '/clothing',
+    label: 'Sneakers',
+    path: '/sneakers?ref=nav',
   },
 ]
 
 export const rightMenuItems: NavItem[] = [
   {
     label: 'Orders & Returns',
-    path: '/orders',
+    path: '/orders?ref=nav',
   },
   {
     label: 'Your Shopping Cart',
-    path: '/cart',
+    path: '/cart?ref=nav',
   },
 ]

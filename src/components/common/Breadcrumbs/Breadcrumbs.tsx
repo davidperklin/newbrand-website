@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ ...props }) => {
   return (
     <nav className="mb-3" aria-label="Current page breadcrumbs">
-      <ol className="flex items-center uppercase overflow-hidden overflow-ellipsis">
+      <ol className="flex items-center uppercase overflow-hidden overflow-ellipsis font-bold">
         {props.crumbs.map((i: Crumb, index) => (
           <li
             key={i.label}
