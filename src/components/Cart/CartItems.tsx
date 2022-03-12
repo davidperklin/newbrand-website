@@ -61,7 +61,7 @@ const CartItems = ({ items, subtotal }: ICartItems) => {
         <div>
           <span className="flex items-start text-success">
             <span className="flex mr-2">
-              <Icon name="Check2Circle" size={14} className="mt-0.5" />
+              <Icon name="Check2Circle" size={14} />
             </span>
             <span>
               Your order qualifies for{' '}
@@ -129,7 +129,7 @@ const CartItems = ({ items, subtotal }: ICartItems) => {
           <DesktopCheckoutComponent />
         </div>
       </div>
-      <div className="md:mt-20 mt-12 mb-12">
+      <div className="md:mt-20 mt-12 mb-12 block lg:hidden">
         <div className="text-copy text-center">
           Not finished shopping? Continue browsing{' '}
           <Link to="/sneakers?ref=cart">sneakers</Link> or{' '}
