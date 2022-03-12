@@ -1,13 +1,14 @@
 import AnnouncementBar from '@components/AnnouncementBar'
 import Footer from '@components/Footer'
 import GlobalNav, { Main, MobileNav } from '@components/GlobalNav'
+import Header from '@components/Header'
 import React from 'react'
 
 const MainLayout = ({ children }) => {
   return (
     <>
       <AnnouncementBar />
-      <GlobalNav />
+      <Header />
       <MobileNav />
       <Main>
         <div

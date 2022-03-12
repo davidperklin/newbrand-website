@@ -1,4 +1,4 @@
-import HomeComponent from '@components/HomeComponent'
+import Hero from '@components/Hero'
 import { graphql } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
@@ -84,10 +84,7 @@ const HomePage = ({ data }) => {
           `}
         </script>
       </Helmet>
-      <HomeComponent
-        image={data.prod1.images[0].gatsbyImageData}
-        image2={data.prod2.images[0].gatsbyImageData}
-      />
+      <Hero />
     </>
   )
 }

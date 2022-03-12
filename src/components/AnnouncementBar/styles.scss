@@ -2,12 +2,15 @@
   background-color: var(--contrast-color);
   color: #fff;
   display: flex;
+  height: var(--announcement-bar-height);
 }
 .announcement-bar__wrapper {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
-  padding: 8px 0;
+  height: var(--announcement-bar-height);
+  display: flex;
+  align-items: center;
 }
 .announcement-bar__text {
   display: inline-flex;

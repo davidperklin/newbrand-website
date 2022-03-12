@@ -1,0 +1,48 @@
+.container {
+  height: calc(100vh - var(--announcement-bar-height));
+  width: 100%;
+  flex: 0 0 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+  margin-top: calc(var(--gn-height) * -1);
+  text-decoration: none;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: var(--base-color);
+  font-family: 'Roundhand';
+  top: 64px;
+  z-index: 3;
+  font-size: 14px;
+}
+.imageContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+.imageWrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 0 0 56.25%;
+  padding-bottom: 0;
+}
+.image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+  img {
+    width: 100px !important;
+  }
+}

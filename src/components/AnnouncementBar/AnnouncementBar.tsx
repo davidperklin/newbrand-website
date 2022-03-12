@@ -3,7 +3,7 @@ import './styles.scss'
 
 const AnnouncementBar = () => {
   const items = [...Array(10)].map((e, i) => (
-    <div className="announcement-bar__text">
+    <div key={`Item ${i}`} className="announcement-bar__text">
       <img
         src="https://nb-marketing-assets.s3.amazonaws.com/icons/ca-clag.svg"
         className="h-2 mr-2 inline-block"
