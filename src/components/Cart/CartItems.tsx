@@ -16,7 +16,11 @@ const CartItems = ({ items, subtotal }: ICartItems) => {
   return (
     <Container>
       <div style={{ maxWidth: '760px' }} className="mx-auto pt-8 md:pt-12">
-        <div role="heading" aria-level={1} className="mb-4 uppercase">
+        <div
+          role="heading"
+          aria-level={1}
+          className="mb-4 uppercase font-bold"
+        >
           Your Shopping Cart
         </div>
         <div>

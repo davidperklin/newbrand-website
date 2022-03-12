@@ -26,8 +26,8 @@ const ProductDisplay = ({ product }: IProductDisplay) => {
   ]
   return (
     <Container>
-      <div className="sm:mt-6">
-        <div className="sm:block hidden">
+      <div className="lg:mt-6">
+        <div className="lg:block hidden">
           <Breadcrumbs crumbs={crumbs} />
         </div>
 

@@ -46,7 +46,7 @@ const CartItem = ({ item, index }: ICartItem) => {
               </div>
             </Link>
 
-            <div className="text-light">{item.variant.title}</div>
+            <div className="text-light mt-0.5">{item.variant.title}</div>
           </div>
           <div>
             <button

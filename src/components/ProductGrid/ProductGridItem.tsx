@@ -9,8 +9,8 @@ const ProductGridItem = ({ product }: ProductGridItemProps) => {
   const [isHovering, setIsHovering] = useState<boolean>(false)
   return (
     <div
-      className={`w-1/2 sm:w-1/3 p-1.5 mb-6 md:mb-8 ${
-        product.productType === 'Clothing' ? 'md:w-1/3' : ''
+      className={`w-1/2 p-1.5 mb-6 md:mb-8 ${
+        product.productType === 'Clothing' ? 'lg:w-1/3' : 'lg:w-1/2'
       }`}
     >
       <Link

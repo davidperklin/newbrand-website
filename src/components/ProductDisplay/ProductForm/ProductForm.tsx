@@ -44,7 +44,7 @@ const ProductForm = ({ product }: IProductForm) => {
       className="flex flex-col mb-8"
       style={{ minHeight: 'calc(100vh - var(--gn-height))' }}
     >
-      <div className="flex justify-between mb-2 order-1 mt-4 md:mt-0">
+      <div className="flex justify-between mb-2 order-1 mt-4 lg:mt-0">
         <div role="heading" aria-level={1} className="uppercase font-bold">
           {product.title}
         </div>
@@ -87,7 +87,7 @@ const ProductForm = ({ product }: IProductForm) => {
             </span>
           </span>
         )}
-        <div className="md:hidden block my-4">
+        <div className="lg:hidden block my-4">
           <Button
             type="submit"
             appearance="primary"
@@ -123,7 +123,7 @@ const ProductForm = ({ product }: IProductForm) => {
       />
 
       <fieldset className="border border-contrast border-dotted rounded-2 px-5 py-4 order-4">
-        <ul className="flex flex-wrap md:mb-4 text-copy">
+        <ul className="flex flex-wrap lg:mb-4 text-copy">
           <li className="flex items-start w-full pb-2.5">
             <span className="block mt-0.5 mr-2">
               <Icon name="Box" size={14} />
@@ -152,7 +152,7 @@ const ProductForm = ({ product }: IProductForm) => {
           </li>
         </ul>
 
-        <div className="mt-5 md:mt-0 block">
+        <div className="mt-5 lg:mt-0 block">
           <Button
             type="submit"
             appearance="primary"

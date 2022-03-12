@@ -24,9 +24,11 @@
   cursor: pointer;
   position: relative;
   box-shadow: var(--btn-shadow);
+  outline-offset: 2px;
   &:focus {
-    border-color: var(--input-focus-border-color);
-    box-shadow: var(--input-focus-shadow);
+    // border-color: var(--input-focus-border-color);
+    // box-shadow: var(--input-focus-shadow);
+    outline: 1px dotted var(--contrast-color);
   }
 
   // background-image: url(https://nb-marketing-assets.s3.amazonaws.com/icons/chevron-down.svg);

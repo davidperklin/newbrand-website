@@ -16,6 +16,11 @@ export default function HTML(props) {
           href="/assets/fonts/SuisseIntl/font.SuisseIntl.css"
           type="text/css"
         />
+        <link
+          rel="stylesheet"
+          href="/assets/fonts/Roundhand/font.Roundhand.css"
+          type="text/css"
+        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes} className="theme--light">

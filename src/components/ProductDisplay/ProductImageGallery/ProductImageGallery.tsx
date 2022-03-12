@@ -14,10 +14,10 @@ const ProductImageGallery = ({ product }: IProductImageGallery) => {
       <Helmet>
         <body data-scroll-locked={imageFullScreenIndex !== null} />
       </Helmet>
-      <div className="block md:hidden">
+      <div className="block lg:hidden">
         <ProductImageSwiper product={product} />
       </div>
-      <div className={`-mx-1.5 -mt-1.5 md:block hidden`}>
+      <div className={`-mx-1.5 -mt-1.5 lg:block hidden`}>
         <div
           className={`uppercase ${styles.gallery__closeNote} ${
             imageFullScreenIndex !== null
@@ -35,7 +35,7 @@ const ProductImageGallery = ({ product }: IProductImageGallery) => {
               key={index}
               className={`${
                 product.productType === 'Footwear'
-                  ? 'p-1.5 md:w-1/2'
+                  ? 'p-1.5 lg:w-1/2'
                   : 'p-1.5'
               }`}
             >

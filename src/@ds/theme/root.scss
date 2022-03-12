@@ -45,8 +45,11 @@
   --z4: 999;
 
   --gn-height: 48px;
+  --announcement-bar-height: 32px;
+  --footer-height: 48px;
   @media (min-width: 768px) {
     --gn-height: 54px;
+    --announcement-bar-height: 36px;
   }
   --site-container-width: 1204px;
   // sizes for buttons, inputs, etc.
@@ -67,7 +70,7 @@
   --container-max-width: 1200px;
 
   // expressiveness
-  --radius1: 4px;
+  --radius1: 3px;
   --radius2: 6px;
   --pill-radius: 30px;
 

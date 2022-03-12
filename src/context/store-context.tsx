@@ -136,8 +136,6 @@ export const StoreProvider = ({ children }) => {
     [cart, loadingAddToCart, loadingUpdateLineItem, loadingRemoveLineItem]
   )
 
-  console.log(storeValue)
-
   return (
     <StoreContext.Provider value={storeValue}>
       {children}
