@@ -2,9 +2,11 @@
   height: var(--footer-height);
   padding-top: 12px;
   color: var(--contrast-color);
+  z-index: 9;
   a,
   li {
-    color: var(--contrast-colo);
+    color: var(--contrast-color);
+    z-index: 99;
   }
 }
 .footer_withFullScreenHero {

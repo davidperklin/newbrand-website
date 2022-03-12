@@ -11,16 +11,23 @@ import Helmet from 'react-helmet'
 import useStoreContext from '@hooks/useStoreContext'
 import { Button } from 'src/@ds'
 
+import { useLocation } from '@reach/router'
+
 const MobileNav = () => {
   const [navIsOpen, setNavIsOpen] = useState<boolean>(false)
   const { cart, handleCheckout } = useStoreContext()
+  const location = useLocation()
+  var isHomePage: boolean = location.pathname === '/'
+
   return (
     <>
       <Helmet>
         <body data-mn-isOpen={navIsOpen} />
       </Helmet>
       <header
-        className={`mobileNavHeader ${navIsOpen ? 'mn_isOpen' : ''}`}
+        className={`mobileNavHeader ${navIsOpen ? 'mn_isOpen' : ''} ${
+          isHomePage ? 'mobileNavHeader_transparent' : ''
+        }`}
       >
         <div className={`mobileNavHeader__Inner`}>
           <Brand closeNav={() => setNavIsOpen(false)} />
