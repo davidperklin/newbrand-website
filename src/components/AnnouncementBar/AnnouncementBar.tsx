@@ -8,7 +8,7 @@ const AnnouncementBar = () => {
         src="https://nb-marketing-assets.s3.amazonaws.com/icons/ca-clag.svg"
         className="h-2 mr-2 inline-block"
       />
-      FREE SHIPPPING ON ALL ORDERS ACROSS CANADA
+      FREE SHIPPING ON ALL ORDERS ACROSS CANADA
       <img
         src="https://nb-marketing-assets.s3.amazonaws.com/icons/ca-clag.svg"
         className="h-2 ml-2  inline-block"
