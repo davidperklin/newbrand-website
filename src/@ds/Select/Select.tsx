@@ -11,7 +11,10 @@ const Select: React.FC<TextareaProps> = ({ label, ...props }) => {
         </label>
       )}
       <div className="select-wrapper">
-        <select className="select" {...props}>
+        <select
+          className={`select ${props.disabled && `cursor-not-allowed`}`}
+          {...props}
+        >
           {props.children}
         </select>
         <img

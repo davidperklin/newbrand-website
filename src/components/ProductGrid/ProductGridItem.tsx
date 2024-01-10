@@ -86,10 +86,7 @@ const ProductGridItem = ({ product }: ProductGridItemProps) => {
               )}
             </div>
             <div className="md:mt-3.5 mt-2">
-              <span>
-                {formatPrice(product.priceRangeV2.minVariantPrice.amount)}{' '}
-                & free express shipping
-              </span>
+              <span className="text-danger">SORRY, SOLD OUT</span>
             </div>
           </div>
         </div>

@@ -76,7 +76,6 @@ const ClothingPage = ({ data }) => {
           <div className="mb-24">
             <ProductGrid products={pants} />
             <ProductGrid products={sweatshirts} />
-            <ProductGrid products={zipSweater} />
           </div>
           <Breadcrumbs crumbs={crumbs} />
         </div>

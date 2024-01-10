@@ -48,7 +48,7 @@ const ProductForm = ({ product }: IProductForm) => {
         <div role="heading" aria-level={1} className="uppercase">
           {product.title}
         </div>
-        <div className="uppercase ">{price}</div>
+        <div className="uppercase text-danger ">SORRY, SOLD OUT</div>
       </div>
 
       <fieldset className="mb-2 order-2 text-copy">
@@ -58,6 +58,7 @@ const ProductForm = ({ product }: IProductForm) => {
               <Select
                 aria-label="Variants"
                 onChange={(event) => handleOptionChange(index, event)}
+                disabled
               >
                 <option
                   value=""
@@ -165,9 +166,8 @@ const ProductForm = ({ product }: IProductForm) => {
           </Button>
           <div className="mt-1.5">
             {!hasSelected ? (
-              <div className="text-center">
-                To buy,{' '}
-                <span className="font-medium">select your size</span>
+              <div className="text-center text-danger">
+                We're sorry, this product is sold out.
               </div>
             ) : (
               <div className="flex items-center justify-center flex-wrap text-center mb-1.5">
